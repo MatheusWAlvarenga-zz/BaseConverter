@@ -1,6 +1,6 @@
 # BaseConverter
 
-<img src="https://github.com/MatheusWAlvarenga/BaseConverter#:~:text=BaseConnverterApp.png" width = "700px" />
+<img src="https://github.com/MatheusWAlvarenga/BaseConverter/blob/main/BaseConnverterApp.png?raw=true" width = "700px" />
 
 BaseConverterApp  is a number base converting calculator for computer, where the
 user can choose the base of input (decimal, binary, octal, hexadecimal or other) and of
