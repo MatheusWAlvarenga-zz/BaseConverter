@@ -1,6 +1,6 @@
-package br.edu.project.baseconverter.main;
+package baseconverter;
 
-import br.edu.project.baseconverter.model.Bases;
+import baseconverter.model.Bases;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
@@ -52,8 +52,7 @@ public class FXMLDocumentController implements Initializable {
         lblResult.setText("");
         lblTxt.setText(""); 
         lblResult.setTextFill(Color.web("#111111"));
-        switch (cbBases.getValue().toString()) {
-            case "Octal":
+        if (cbBases.getValue().toString() ==  "Octal") {
                 try{ String oct = lblField.getText();
                 int converted =  Integer.parseInt ( oct , 8);
                 lblTxt.setText("O número correspondente em decimal é: ");
@@ -61,9 +60,8 @@ public class FXMLDocumentController implements Initializable {
                 } catch (NumberFormatException e){
                     lblResult.setTextFill(Color.web("#DE0134"));
                     lblResult.setText("Digite um número octal válido!");
-                }
-                break;
-            case "Binário":
+                } 
+        } else if (cbBases.getValue().toString() ==  "Binário"){
                 try{ String bin = lblField.getText();
                 int converted =  Integer.parseInt ( bin , 2);
                 lblTxt.setText("O número correspondente em decimal é: ");
@@ -72,8 +70,7 @@ public class FXMLDocumentController implements Initializable {
                     lblResult.setTextFill(Color.web("#DE0134"));
                     lblResult.setText("Digite um número binário válido!");
                 }
-                break;
-            case "Hexadecimal":
+        } else if (cbBases.getValue().toString() ==  "Hexadecimal"){
                 try { String hex = lblField.getText();
                 int converted =  Integer.parseInt ( hex , 16);
                 lblTxt.setText("O número correspondente em decimal é: ");
@@ -82,9 +79,6 @@ public class FXMLDocumentController implements Initializable {
                     lblResult.setTextFill(Color.web("#DE0134"));
                     lblResult.setText("Digite um número Hexadecimal válido!");
                 }
-                break; 
-            default:
-                break;
         }
     }
     
@@ -93,8 +87,7 @@ public class FXMLDocumentController implements Initializable {
         lblResult.setText("");
         lblTxt.setText("");   
         lblResult.setTextFill(Color.web("#111111"));
-        switch (cbBases.getValue().toString()) {
-            case "Decimal":
+        if (cbBases.getValue().toString() ==  "Decimal"){
                 try{ int dec = Integer.parseInt(lblField.getText());
                 String converted =  Integer.toOctalString(dec);
                 lblTxt.setText("O número correspondente em octal é: ");
@@ -103,8 +96,7 @@ public class FXMLDocumentController implements Initializable {
                     lblResult.setTextFill(Color.web("#DE0134"));
                     lblResult.setText("Digite um número decimal válido!");
                 }
-                break;
-            case "Binário":
+        } else if (cbBases.getValue().toString() ==  "Binário"){
                 try { String bin = lblField.getText();
                 int convertedDecimal =  Integer.parseInt ( bin , 2);
                 String converted = Integer.toOctalString(convertedDecimal);
@@ -114,8 +106,7 @@ public class FXMLDocumentController implements Initializable {
                     lblResult.setTextFill(Color.web("#DE0134"));
                     lblResult.setText("Digite um número binário válido!");
                 }
-                break;
-            case "Hexadecimal":
+        } else if (cbBases.getValue().toString() ==  "Hexadecimal"){
                 try{ String hex = lblField.getText();
                 int convertedDecimal =  Integer.parseInt ( hex , 16);
                 String converted = Integer.toOctalString(convertedDecimal);
@@ -125,9 +116,6 @@ public class FXMLDocumentController implements Initializable {
                     lblResult.setTextFill(Color.web("#DE0134"));
                     lblResult.setText("Digite um número Hexadecimal válido!");
                 }
-                break;
-            default:
-                break;
         }
     }
     
@@ -136,8 +124,7 @@ public class FXMLDocumentController implements Initializable {
         lblResult.setText("");
         lblTxt.setText(""); 
         lblResult.setTextFill(Color.web("#111111"));
-        switch (cbBases.getValue().toString()) {
-            case "Decimal":
+        if (cbBases.getValue().toString() ==  "Decimal"){
                 try{ int dec = Integer.parseInt(lblField.getText());
                 String converted =  Integer.toBinaryString(dec);
                 lblTxt.setText("O número correspondente em binário é: ");
@@ -146,8 +133,7 @@ public class FXMLDocumentController implements Initializable {
                     lblResult.setTextFill(Color.web("#DE0134"));
                     lblResult.setText("Digite um número decimal válido!");
                 }
-                break;
-            case "Octal":
+        } else if (cbBases.getValue().toString() ==  "Octal"){
                 try{ String oct = lblField.getText();
                 int convertedDecimal =  Integer.parseInt ( oct , 8);
                 String converted = Integer.toBinaryString(convertedDecimal);
@@ -157,8 +143,7 @@ public class FXMLDocumentController implements Initializable {
                     lblResult.setTextFill(Color.web("#DE0134"));
                     lblResult.setText("Digite um número octal válido!");
                 }
-                break;
-            case "Hexadecimal":
+        } else if (cbBases.getValue().toString() ==  "Hexadecimal"){
                 try{ String hex = lblField.getText();
                 int convertedDecimal =  Integer.parseInt ( hex , 16);
                 String converted = Integer.toBinaryString(convertedDecimal);
@@ -168,9 +153,6 @@ public class FXMLDocumentController implements Initializable {
                     lblResult.setTextFill(Color.web("#DE0134"));
                     lblResult.setText("Digite um número Hexadecimal válido!");
                 }
-                break;
-            default:
-                break;
         }
     }
     
@@ -179,8 +161,7 @@ public class FXMLDocumentController implements Initializable {
         lblResult.setText("");
         lblTxt.setText("");   
         lblResult.setTextFill(Color.web("#111111"));
-        switch (cbBases.getValue().toString()) {
-            case "Decimal":
+        if (cbBases.getValue().toString() ==  "Decimal"){
                 try{ int dec = Integer.parseInt(lblField.getText());
                 String converted =  Integer.toHexString(dec);
                 lblTxt.setText("O número correspondente em hexadecimal é: ");
@@ -189,8 +170,7 @@ public class FXMLDocumentController implements Initializable {
                     lblResult.setTextFill(Color.web("#DE0134"));
                     lblResult.setText("Digite um número decimal válido!");
                 }
-                break;
-            case "Octal":
+        } else if (cbBases.getValue().toString() ==  "Octal"){
                 try{ String oct = lblField.getText();
                 int convertedDecimal =  Integer.parseInt ( oct , 8);
                 String converted = Integer.toHexString(convertedDecimal);
@@ -200,8 +180,7 @@ public class FXMLDocumentController implements Initializable {
                     lblResult.setTextFill(Color.web("#DE0134"));
                     lblResult.setText("Digite um número octal válido!");
                 }
-                break;
-            case "Binário":
+        } else if (cbBases.getValue().toString() ==  "Binário"){
                 try{
                     String bin = lblField.getText();
                     int convertedDecimal =  Integer.parseInt ( bin , 2);
@@ -212,9 +191,6 @@ public class FXMLDocumentController implements Initializable {
                     lblResult.setTextFill(Color.web("#DE0134"));
                     lblResult.setText("Digite um número binário válido!");
                 }
-                break;
-            default:
-                break;
         }
     }
        
@@ -227,8 +203,7 @@ public class FXMLDocumentController implements Initializable {
     public void enableButton() {
         lblResult.setText("");
         lblTxt.setText("");  
-        switch (cbBases.getValue().toString()) {
-            case "Decimal":
+        if (cbBases.getValue().toString() =="Decimal") {
                 lblButtons.setDisable(false);
                 lblField.setDisable(false);
                 lblInput.setDisable(false);
@@ -237,8 +212,7 @@ public class FXMLDocumentController implements Initializable {
                 buttonOctal.setDisable(false);
                 buttonBinario.setDisable(false);
                 buttonHexa.setDisable(false);
-                break;
-            case "Octal":
+        } else if (cbBases.getValue().toString() =="Octal") {
                 lblButtons.setDisable(false);
                 lblField.setDisable(false);
                 lblInput.setDisable(false);
@@ -247,8 +221,7 @@ public class FXMLDocumentController implements Initializable {
                 buttonOctal.setDisable(true);
                 buttonBinario.setDisable(false);
                 buttonHexa.setDisable(false);
-                break;
-            case "Binário":
+        } else if (cbBases.getValue().toString() =="Binário") {
                 lblButtons.setDisable(false);
                 lblField.setDisable(false);
                 lblInput.setDisable(false);
@@ -257,8 +230,7 @@ public class FXMLDocumentController implements Initializable {
                 buttonOctal.setDisable(false);
                 buttonBinario.setDisable(true);
                 buttonHexa.setDisable(false);
-                break;
-            case "Hexadecimal":
+        } else if (cbBases.getValue().toString() =="Hexadecimal") { 
                 lblButtons.setDisable(false);
                 lblField.setDisable(false);
                 lblInput.setDisable(false);
@@ -267,12 +239,7 @@ public class FXMLDocumentController implements Initializable {
                 buttonOctal.setDisable(false);
                 buttonBinario.setDisable(false);
                 buttonHexa.setDisable(true);
-                break; 
-            default:
-                break;
         }
-        
-        
     }    
     
     public void loadCategory() {

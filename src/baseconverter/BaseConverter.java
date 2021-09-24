@@ -1,4 +1,4 @@
-package br.edu.project.baseconverter.main;
+package baseconverter;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
