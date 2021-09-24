@@ -1,6 +1,6 @@
-package br.edu.projects.baseconverter;
+package br.edu.project.baseconverter.main;
 
-import br.edu.projects.baseconverter.model.Bases;
+import br.edu.project.baseconverter.model.Bases;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;

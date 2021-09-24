@@ -1,4 +1,4 @@
-package br.edu.projects.baseconverter.model;
+package br.edu.project.baseconverter.model;
 
 /**
  *
