@@ -9,5 +9,5 @@ user can choose the base of input (decimal, binary, octal, hexadecimal or other)
 output (decimal, binary, octal, hexadecimal or other). BaseConverterApp handles input errors (invalid characters).
 </span>
 
-# Installation:
+###  Installation:
 To use BaseConverterApp, the user must have the JDK or JRE installed on the computer and open the ".jar" file.
