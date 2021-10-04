@@ -1,8 +1,11 @@
 # BaseConverter
+
+### Figma Project:
 <div align="center">
 <img src="https://github.com/MatheusWAlvarenga/BaseConverter/blob/main/img/BaseConnverterApp.png?raw=true" width = "800px"/>
 </div>
 
+### About:
 <span>
 BaseConverterApp  is a number base converting calculator for computer, where the
 user can choose the base of input (decimal, binary, octal, hexadecimal or other) and of
