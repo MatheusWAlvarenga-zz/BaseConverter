@@ -28,16 +28,7 @@ public class FXMLDocumentController implements Initializable {
     private Label lblResult, lblTxt, lblInput, lblButtons;
     
     @FXML
-    private Button buttonDecimal;
-    
-    @FXML
-    private Button buttonOctal;
-    
-    @FXML
-    private Button buttonBinario;
-    
-    @FXML
-    private Button buttonHexa;
+    private Button buttonDecimal, buttonOctal, buttonBinario, buttonHexa;
     
     @FXML
     private TextField lblField;
